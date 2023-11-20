@@ -35,7 +35,7 @@
             android:id="@+id/matkhau"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Mật Khẩu"
+            android:hint="Password"
             android:inputType="textPassword"
             android:ems="18"
             android:textSize="20dp"
