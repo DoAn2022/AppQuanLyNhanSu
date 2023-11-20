@@ -1,0 +1,16 @@
+<!-- res/layout/item_nhanvien_ql.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Thêm các TextView để hiển thị thông tin nhân viên -->
+    <TextView
+        android:id="@+id/textHoTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Thêm các TextView khác -->
+
+</LinearLayout>

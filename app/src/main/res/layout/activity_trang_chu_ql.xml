@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Activity.QuanLy.TrangChuQL_Activity">
+
+    <!-- Ảnh công ty và Tên công ty -->
+    <ImageView
+        android:id="@+id/imageViewCompanyLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DH Fast Global"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#E83A3A"
+        android:layout_below="@id/imageViewCompanyLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Danh sách các nút bấm -->
+    <Button
+        android:id="@+id/btnManageEmployees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#E83A3A"
+        android:backgroundTint="#2ACCCC"
+        android:textStyle="bold"
+        android:text="Quản lý nhân viên"
+        android:layout_below="@id/textViewCompanyName"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnManageAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#E83A3A"
+        android:backgroundTint="#2ACCCC"
+        android:textStyle="bold"
+        android:text="Quản lý chấm công"
+        android:layout_below="@id/btnManageEmployees"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnManageSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#E83A3A"
+        android:backgroundTint="#2ACCCC"
+        android:textStyle="bold"
+        android:text="Quản lý lương"
+        android:layout_below="@id/btnManageAttendance"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnPersonalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#E83A3A"
+        android:backgroundTint="#2ACCCC"
+        android:textStyle="bold"
+        android:text="Thông tin cá nhân"
+        android:layout_below="@id/btnManageSalary"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#F5CC00"
+        android:backgroundTint="#689F38"
+        android:textStyle="bold"
+        android:text="Đăng xuất"
+        android:layout_below="@id/btnPersonalInfo"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>
