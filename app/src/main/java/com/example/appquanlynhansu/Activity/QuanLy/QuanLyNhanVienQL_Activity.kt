@@ -1,5 +1,6 @@
 package com.example.appquanlynhansu.Activity.QuanLy
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -7,42 +8,44 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.appquanlynhansu.Adapter.QuanLy.NhanVienQLAdapter
 import com.example.appquanlynhansu.Model.NhanVien
 import com.example.appquanlynhansu.R
-import java.text.SimpleDateFormat
-import java.util.Locale
 
-class QuanLyNhanVienQL_Activity : AppCompatActivity() {
+class QuanLyNhanVienQL_Activity : AppCompatActivity(), NhanVienQLAdapter.OnItemClickListener {
 
     private lateinit var recyclerView: RecyclerView
-    private lateinit var NhanVienQLAdapter: NhanVienQLAdapter
+    private lateinit var nhanVienAdapter: NhanVienQLAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quan_ly_nhan_vien_ql)
 
+        // Ánh xạ RecyclerView từ layout
         recyclerView = findViewById(R.id.recyclerViewnhanvienql)
-        NhanVienQLAdapter = NhanVienQLAdapter(getSampleNhanVienList())
 
+        // Khởi tạo Adapter và RecyclerView
+        nhanVienAdapter = NhanVienQLAdapter(getSampleNhanVienList(), this)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = NhanVienQLAdapter
+        recyclerView.adapter = nhanVienAdapter
     }
 
     private fun getSampleNhanVienList(): List<NhanVien> {
-        // Trả về một danh sách nhân viên mẫu
+        // Trả về danh sách nhân viên mẫu, bạn có thể thay thế với dữ liệu thực tế từ nguồn dữ liệu của bạn.
         val nhanVienList = mutableListOf<NhanVien>()
 
-        // Tạo một số nhân viên mẫu
-        val formatter = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
-        val ngaySinh1 = formatter.parse("01/01/1990")
-        val ngaySinh2 = formatter.parse("15/05/1985")
-        val ngaySinh3 = formatter.parse("20/10/1995")
-
-        nhanVienList.add(NhanVien("Nguyen Van A", ngaySinh1, "Phòng A", "Chức vụ A", "a@gmail.com", "123456789", "Địa chỉ A", 50000.0))
-        nhanVienList.add(NhanVien("Tran Thi B", ngaySinh2, "Phòng B", "Chức vụ B", "b@gmail.com", "987654321", "Địa chỉ B", 60000.0))
-        nhanVienList.add(NhanVien("Le Van C", ngaySinh3, "Phòng C", "Chức vụ C", "c@gmail.com", "111222333", "Địa chỉ C", 70000.0))
+        // Thêm nhiều nhân viên khác nếu cần
 
         return nhanVienList
     }
+
+    override fun onXemClick(position: Int) {
+        // Xử lý sự kiện khi nút "Xem" được nhấn
+        val selectedNhanVien = nhanVienAdapter.getItem(position)
+
+        // Chuyển đến màn hình hiển thị thông tin chi tiết
+
+    }
+
+    override fun onXoaClick(position: Int) {
+        // Xử lý sự kiện khi nút "Xóa" được nhấn
+        // Bạn có thể thêm mã xử lý xóa ở đây nếu cần
+    }
 }
-
-
-
