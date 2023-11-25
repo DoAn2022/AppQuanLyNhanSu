@@ -1,16 +1,50 @@
 <!-- res/layout/item_nhanvien_ql.xml -->
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:padding="16dp">
 
-    <!-- Thêm các TextView để hiển thị thông tin nhân viên -->
     <TextView
-        android:id="@+id/textHoTen"
+        android:id="@+id/textTenNhanVien"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Tên Nhân Viên"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
 
-    <!-- Thêm các TextView khác -->
+    <TextView
+        android:id="@+id/textPhongBan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phòng Ban"
+        android:layout_below="@id/textTenNhanVien"
+        android:layout_marginTop="4dp"
+        android:textColor="#666666"/>
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/textPhongBan"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/buttonXem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem Chi Tiết"
+            android:textColor="#E83A3A"
+            android:backgroundTint="#2ACCCC"/>
+
+        <Button
+            android:id="@+id/buttonXoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa"
+            android:textColor="#FBC02D"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#FF0000"/>
+    </LinearLayout>
+
+</RelativeLayout>
