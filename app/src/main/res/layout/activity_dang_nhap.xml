@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity.DangNhap_Activity"
-    android:background="@drawable/background"
+    android:background="@drawable/b5"
     android:padding="15dp">
 
     <LinearLayout

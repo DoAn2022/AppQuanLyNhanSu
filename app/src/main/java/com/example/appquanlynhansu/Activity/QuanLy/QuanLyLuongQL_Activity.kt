@@ -29,9 +29,7 @@ class QuanLyLuongQL_Activity : AppCompatActivity() {
         val luongList = mutableListOf<Luong>()
 
         // Tạo một số bảng lương mẫu
-        luongList.add(Luong(ObjectId(), 1.0, 5000000.0, 1000000.0, 6000000.0))
-        luongList.add(Luong(ObjectId(), 2.0, 5000000.0, 800000.0, 5800000.0))
-        luongList.add(Luong(ObjectId(), 3.0, 5000000.0, 1200000.0, 6200000.0))
+        luongList.add(Luong(ObjectId(), 1.0, 5000000, 1000000, 6000000))
 
         return luongList
     }

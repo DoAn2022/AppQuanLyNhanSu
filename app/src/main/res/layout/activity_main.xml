@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
+    android:background="@drawable/b1">
 
     <ImageView
         android:id="@+id/imageViewLogo"
@@ -17,11 +17,10 @@
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quản Lý Nhân Sự DH Fast Global"
-
+        android:text="Quản Lý Nhân Sự "
         android:textStyle="bold"
-        android:textSize="25sp"
-        android:textColor="#FFA000"
+        android:textSize="30dp"
+        android:textColor="#FBC02D"
         android:layout_below="@id/imageViewLogo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"/>
@@ -30,10 +29,11 @@
         android:id="@+id/buttonHello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HELLO"
+        android:text="XIN CHÀO"
+        android:textSize="25dp"
         android:textStyle="bold"
         android:textColor="#E83A3A"
-        android:backgroundTint="#2ACCCC"
+        android:backgroundTint="#55CC2A"
         android:layout_below="@id/textViewTitle"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"/>

@@ -10,5 +10,5 @@ data class NhanVien(
     val gmail: String,
     val sdt: String,
     val diachi: String,
-    val luong: Double,
+    val luong: Long,
 )

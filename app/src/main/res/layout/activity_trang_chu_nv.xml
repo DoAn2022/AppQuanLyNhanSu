@@ -35,7 +35,7 @@
         android:textColor="#E83A3A"
         android:backgroundTint="#2ACCCC"
         android:textStyle="bold"
-        android:text="Thông tin nhân viên"
+        android:text="THÔNG TIN NHÂN VIÊN"
         android:layout_below="@id/textViewCompanyName"
         android:layout_marginTop="20dp"/>
 
@@ -46,7 +46,7 @@
         android:textColor="#E83A3A"
         android:backgroundTint="#2ACCCC"
         android:textStyle="bold"
-        android:text="Chấm Công"
+        android:text="CHẤM CÔNG"
         android:layout_below="@id/btnManageEmployees"
         android:layout_marginTop="8dp"/>
 
@@ -57,19 +57,8 @@
         android:textColor="#E83A3A"
         android:backgroundTint="#2ACCCC"
         android:textStyle="bold"
-        android:text="Lương"
+        android:text="LƯƠNG"
         android:layout_below="@id/btnManageAttendance"
-        android:layout_marginTop="8dp"/>
-
-    <Button
-        android:id="@+id/btnPersonalInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#E83A3A"
-        android:backgroundTint="#2ACCCC"
-        android:textStyle="bold"
-        android:text="Thông tin cá nhân"
-        android:layout_below="@id/btnManageSalary"
         android:layout_marginTop="8dp"/>
 
     <Button
@@ -80,7 +69,7 @@
         android:backgroundTint="#689F38"
         android:textStyle="bold"
         android:text="Đăng xuất"
-        android:layout_below="@id/btnPersonalInfo"
+        android:layout_below="@id/btnManageSalary"
         android:layout_marginTop="8dp"/>
 
 </RelativeLayout>

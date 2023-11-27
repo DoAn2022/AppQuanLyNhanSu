@@ -3,10 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#3BBEBC"
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/textTenNhanVien"
+        android:id="@+id/text_itemnvql_TenNhanVien"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tên Nhân Viên"
@@ -14,11 +15,11 @@
         android:textColor="#000000"/>
 
     <TextView
-        android:id="@+id/textPhongBan"
+        android:id="@+id/text_itemnvql_PhongBan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Phòng Ban"
-        android:layout_below="@id/textTenNhanVien"
+        android:layout_below="@id/text_itemnvql_TenNhanVien"
         android:layout_marginTop="4dp"
         android:textColor="#666666"/>
 
@@ -26,25 +27,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@id/textPhongBan"
+        android:layout_below="@id/text_itemnvql_PhongBan"
         android:layout_marginTop="8dp">
 
         <Button
-            android:id="@+id/buttonXem"
+            android:id="@+id/btn_itemnvql_Xem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Xem Chi Tiết"
-            android:textColor="#E83A3A"
-            android:backgroundTint="#2ACCCC"/>
+            android:textColor="#00796B"
+            android:backgroundTint="#FBC02D"/>
 
         <Button
-            android:id="@+id/buttonXoa"
+            android:id="@+id/btn_itemnvql_Xoa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Xóa"
-            android:textColor="#FBC02D"
+            android:textColor="#303F9F"
             android:layout_marginStart="16dp"
-            android:backgroundTint="#FF0000"/>
+            android:backgroundTint="#D32F2F"/>
     </LinearLayout>
 
 </RelativeLayout>
