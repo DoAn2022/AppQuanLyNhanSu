@@ -3,14 +3,12 @@ package com.example.appquanlynhansu.Activity.NhanVien
 import android.app.DatePickerDialog
 import android.os.Bundle
 import android.widget.Button
-import android.widget.DatePicker
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.appquanlynhansu.Adapter.NhanVien.ChamCongNVAdapter
-
 import com.example.appquanlynhansu.Model.ChamCong
 import com.example.appquanlynhansu.R
 import org.bson.types.ObjectId
@@ -36,10 +34,6 @@ class ChamCongNV_Activity : AppCompatActivity() {
         btnChamCong = findViewById(R.id.btn_chamcongnv_ChamCong)
         recyclerViewChamCong = findViewById(R.id.recyclerView_ccnv_nv)
 
-        btnChonNgay.setOnClickListener {
-            showDatePickerDialog()
-        }
-
         // Lấy dữ liệu từ Intent (thay thế bằng dữ liệu thực tế)
         val tenNhanVien = "Tên Nhân Viên Mẫu"
         textTenNhanVien.text = "Tên Nhân Viên: $tenNhanVien"
@@ -54,7 +48,7 @@ class ChamCongNV_Activity : AppCompatActivity() {
 
         // Bắt sự kiện click cho nút Chọn Ngày
         btnChonNgay.setOnClickListener {
-            // Xử lý sự kiện chọn ngày ở đây (có thể sử dụng DatePickerDialog)
+            showDatePickerDialog()
         }
 
         // Bắt sự kiện click cho nút Chấm Công
@@ -71,16 +65,15 @@ class ChamCongNV_Activity : AppCompatActivity() {
 
         val datePickerDialog = DatePickerDialog(
             this,
-            DatePickerDialog.OnDateSetListener { _: DatePicker, year: Int, month: Int, dayOfMonth: Int ->
+            DatePickerDialog.OnDateSetListener { _, year, month, dayOfMonth ->
                 val selectedDate = Calendar.getInstance()
                 selectedDate.set(year, month, dayOfMonth)
 
                 // Hiển thị ngày đã chọn
                 val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
                 val formattedDate = dateFormat.format(selectedDate.time)
-                // Ở đây bạn có thể thực hiện bất kỳ xử lý nào với ngày đã chọn
-                // Ví dụ: hiển thị ngày, lưu vào biến, gửi đến server, vv.
-                // Đối với mục đích minh họa, ta sẽ hiển thị ngày đã chọn trong Toast
+
+                // Hiển thị ngày đã chọn trong Toast (có thể thay đổi thành xử lý khác)
                 Toast.makeText(this, "Đã chọn ngày: $formattedDate", Toast.LENGTH_SHORT).show()
             },
             currentYear,
@@ -96,7 +89,7 @@ class ChamCongNV_Activity : AppCompatActivity() {
         val chamCongList = mutableListOf<ChamCong>()
 
         // Thêm mẫu dữ liệu chấm công
-        chamCongList.add(ChamCong(ObjectId(), "NTD","MKT", Date(),"Có"))
+        chamCongList.add(ChamCong(ObjectId(), "NTD", "MKT", Date(), "Có"))
 
         // Thêm các bản ghi chấm công khác nếu cần
 

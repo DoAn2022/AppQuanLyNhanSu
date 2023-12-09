@@ -15,24 +15,17 @@ class DangNhap_Activity : AppCompatActivity() {
 
         // Ánh xạ các nút từ layout
         val Btn_dangnhap: Button = findViewById(R.id.Btn_dangnhap)
-        val Btn_dangky: Button = findViewById(R.id.Btn_dangky)
+
 
         // Đăng ký sự kiện click cho các nút
         Btn_dangnhap.setOnClickListener{R.id.Btn_dangnhap}
-        Btn_dangky.setOnClickListener{R.id.Btn_dangky}
+
 
         Btn_dangnhap.setOnClickListener {
             val intent = Intent(this, TrangChuNv_Activity::class.java)
             intent.putExtra("key", "value")
             startActivity(intent)
         }
-
-        Btn_dangky.setOnClickListener {
-            val intent = Intent(this, DangKy_Activity::class.java)
-            intent.putExtra("key", "value")
-            startActivity(intent)
-    }
-
 
     }
 }
