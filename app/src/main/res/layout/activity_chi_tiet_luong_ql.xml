@@ -24,11 +24,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tên Nhân Viên:"
-                    android:textStyle="bold"
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edt_ttnv_TenNhanVien"
+                    android:id="@+id/edt_ctl_TenNhanVien"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -42,31 +41,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:text="Ngày Sinh:"
-                    android:textSize="18sp" />
-
-                <EditText
-                    android:id="@+id/edt_ttnv_NgaySinh"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:inputType="text" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
                     android:text="Phòng Ban:"
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edt_ttnv_PhongBan"
+                    android:id="@+id/edt_ctl_PhongBan"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -80,12 +59,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:text="Chức Vụ:"
+                    android:text="Tháng:"
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edt_ttnv_ChucVu"
+                    android:id="@+id/edt_ctl_Thang"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -99,12 +77,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:text="Email:"
+                    android:text="Lương Cơ Bản:"
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edt_ttnv_Email"
+                    android:id="@+id/edt_ctl_LuongCoBan"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -118,12 +95,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SĐT:"
-                    android:textStyle="bold"
+                    android:text="Thuong"
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edt_ttnv_Sdt"
+                    android:id="@+id/edt_ctl_Thuong"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -137,37 +113,16 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Địa Chỉ:"
-                    android:textStyle="bold"
+                    android:text="Tổng Lương:"
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edt_ttnv_DiaChi"
+                    android:id="@+id/edt_ctl_TongLuong"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:inputType="text" />
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Lương:"
-                    android:textStyle="bold"
-                    android:textSize="18sp" />
-
-                <EditText
-                    android:id="@+id/edt_ttnv_Luong"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:inputType="text" />
-            </LinearLayout>
-
             <!-- Nút Sửa và Lưu -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -176,18 +131,18 @@
                 android:layout_marginTop="16dp">
 
                 <Button
-                    android:id="@+id/btn_ttnv_Sua"
+                    android:id="@+id/btnSua"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:textColor="#E83A3A"
-                    android:backgroundTint="#40F30F"
+                    android:backgroundTint="#4FF513"
+                    android:layout_weight="1"
                     android:text="Sửa"
                     android:textStyle="bold"
                     android:textSize="20dp"/>
 
                 <Button
-                    android:id="@+id/btn_ttnv_Luu"
+                    android:id="@+id/btnLuu"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

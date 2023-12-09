@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity.DangNhap_Activity"
-    android:background="@drawable/background"
+    android:background="@drawable/b5"
     android:padding="15dp">
 
     <LinearLayout
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:ems="15"
-            android:hint="Password"
+            android:hint="Mật khẩu"
             android:inputType="textPassword"
             android:textSize="20dp" />
 
@@ -64,9 +64,9 @@
 
         <Button
             android:id="@+id/Btn_dangky"
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
+                android:layout_marginBottom="15dp"
             android:backgroundTint="#689F38"
             android:text="Đăng Ký"
             android:textSize="20dp"

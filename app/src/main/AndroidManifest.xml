@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,7 +15,13 @@
         android:theme="@style/Theme.AppQuanLyNhanSu"
         tools:targetApi="31">
         <activity
-            android:name=".Activity.NhanVien.ThongTinCaNhanNV_Activity"
+            android:name=".Activity.QuanLy.ChiTietLuongQL_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.QuanLy.ChiTietChamCongQL_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.QuanLy.ChiTietNhanVienQL_Activity"
             android:exported="false" />
         <activity
             android:name=".Activity.NhanVien.LuongNV_Activity"
@@ -23,9 +31,6 @@
             android:exported="false" />
         <activity
             android:name=".Activity.NhanVien.ThongTinNhanVienNV_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Activity.QuanLy.ThongTinCaNhanQL_Activity"
             android:exported="false" />
         <activity
             android:name=".Activity.QuanLy.QuanLyLuongQL_Activity"

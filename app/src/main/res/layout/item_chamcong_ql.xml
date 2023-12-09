@@ -1,21 +1,38 @@
 <!-- res/layout/item_chamcong_ql.xml -->
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
-
-    <!-- Thêm các TextView để hiển thị thông tin chấm công -->
-    <TextView
-        android:id="@+id/textngay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    android:background="#76BDE3"
+    android:padding="16dp">
 
     <TextView
-        android:id="@+id/texttrangthai"
+        android:id="@+id/text_itemccql_TenNhanVien"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Tên Nhân Viên"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
 
-    <!-- Thêm các TextView khác nếu cần -->
+    <TextView
+        android:id="@+id/text_itemccql_PhongBan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phòng Ban"
+        android:layout_below="@id/text_itemccql_TenNhanVien"
+        android:layout_marginTop="4dp"
+        android:textColor="#666666"/>
 
-</LinearLayout>
+    <Button
+        android:id="@+id/btn_itemccql_Xem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_itemccql_PhongBan"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="-46dp"
+        android:layout_toEndOf="@id/text_itemccql_TenNhanVien"
+        android:backgroundTint="#31E112"
+        android:text="Xem Chi Tiết"
+        android:textColor="#E83A3A" />
+
+</RelativeLayout>

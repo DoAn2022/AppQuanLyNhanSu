@@ -2,22 +2,26 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
 
     <TextView
-        android:id="@+id/textViewTitle"
+        android:id="@+id/textView_qlnvql_qlnv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Quản Lý Nhân Viên"
+        android:textStyle="bold"
+        android:textColor="#E83A3A"
+        android:backgroundTint="#2ACCCC"
         android:textSize="24sp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewnhanvienql"
+        android:id="@+id/recyclerView_qlnvql_nhanvienql"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/textViewTitle"
+        android:layout_below="@id/textView_qlnvql_qlnv"
         android:layout_marginTop="16dp"/>
 
     <!-- Thêm các thành phần khác nếu cần -->

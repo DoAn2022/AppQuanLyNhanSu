@@ -28,7 +28,7 @@
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edt_ttnv_TenNhanVien"
+                    android:id="@+id/edt_ctnv_TenNhanVien"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -47,7 +47,7 @@
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edt_ttnv_NgaySinh"
+                    android:id="@+id/edt_ctnv_NgaySinh"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -66,7 +66,7 @@
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edt_ttnv_PhongBan"
+                    android:id="@+id/edt_ctnv_PhongBan"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -85,7 +85,7 @@
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edt_ttnv_ChucVu"
+                    android:id="@+id/edt_ctnv_ChucVu"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -104,31 +104,31 @@
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edt_ttnv_Email"
+                    android:id="@+id/edt_ctnv_Email"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:inputType="text" />
             </LinearLayout>
             <LinearLayout
-                android:layout_width="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:text="SĐT:"
+                android:textStyle="bold"
+                android:textSize="18sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="SĐT:"
-                    android:textStyle="bold"
-                    android:textSize="18sp" />
-
-                <EditText
-                    android:id="@+id/edt_ttnv_Sdt"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:inputType="text" />
-            </LinearLayout>
+            <EditText
+                android:id="@+id/edt_ctnv_Sdt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text" />
+        </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -142,7 +142,7 @@
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edt_ttnv_DiaChi"
+                    android:id="@+id/edt_ctnv_DiaChi"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -161,7 +161,7 @@
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edt_ttnv_Luong"
+                    android:id="@+id/edt_ctnv_Luong"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -176,7 +176,7 @@
                 android:layout_marginTop="16dp">
 
                 <Button
-                    android:id="@+id/btn_ttnv_Sua"
+                    android:id="@+id/btnSua"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -187,7 +187,7 @@
                     android:textSize="20dp"/>
 
                 <Button
-                    android:id="@+id/btn_ttnv_Luu"
+                    android:id="@+id/btnLuu"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

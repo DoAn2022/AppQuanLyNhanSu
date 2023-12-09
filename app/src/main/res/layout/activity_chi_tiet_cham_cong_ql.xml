@@ -27,7 +27,7 @@
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edt_lnv_TenNhanVien"
+                    android:id="@+id/edt_ctcc_TenNhanVien"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -45,12 +45,19 @@
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edt_lnv_PhongBan"
+                    android:id="@+id/edt_ctcc_PhongBan"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:inputType="text" />
             </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_ctcc_ql"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/textView_qlnvql_qlnv"
+                android:layout_marginTop="16dp"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -59,80 +66,44 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tháng:"
-                    android:textSize="18sp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btn_lnv_ChonThang"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Chọn Tháng"
-                    android:textSize="18sp"
-                    android:textColor="#000000"
-                    android:backgroundTint="#FBC02D"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Lương Cơ Bản:"
+                    android:text="Tổng Số Ngày:"
                     android:textSize="18sp" />
 
                 <EditText
-                    android:id="@+id/edt_lnv_LuongCoBan"
+                    android:id="@+id/edt_ctcc_TongSoNgay"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:inputType="text" />
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Thuong"
-                    android:textSize="18sp" />
-
-                <EditText
-                    android:id="@+id/edt_lnv_Thuong"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:inputType="text" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tổng Lương:"
-                    android:textSize="18sp" />
-
-                <EditText
-                    android:id="@+id/edt_lnv_TongLuong"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:inputType="text" />
-            </LinearLayout>
-
+            <!-- Nút Sửa và Lưu -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginTop="16dp">
 
+                <Button
+                    android:id="@+id/btnSua"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#E83A3A"
+                    android:backgroundTint="#4FF513"
+                    android:layout_weight="1"
+                    android:text="Sửa"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <Button
+                    android:id="@+id/btnLuu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#E83A3A"
+                    android:backgroundTint="#2ACCCC"
+                    android:text="Lưu"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

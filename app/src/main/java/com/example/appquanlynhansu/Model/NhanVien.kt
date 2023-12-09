@@ -1,5 +1,4 @@
 package com.example.appquanlynhansu.Model
-
 import java.util.Date
 
 data class NhanVien(
@@ -10,5 +9,5 @@ data class NhanVien(
     val gmail: String,
     val sdt: String,
     val diachi: String,
-    val luong: Double,
+    val luong: Long,
 )

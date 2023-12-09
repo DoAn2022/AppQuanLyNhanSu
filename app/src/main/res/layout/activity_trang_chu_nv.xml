@@ -8,7 +8,7 @@
 
     <!-- Header: Ảnh công ty và Tên công ty -->
     <ImageView
-        android:id="@+id/imageViewCompanyLogo"
+        android:id="@+id/imageViewtcnv_Logo"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/logo"
@@ -16,71 +16,60 @@
         android:layout_marginTop="16dp"/>
 
     <TextView
-        android:id="@+id/textViewCompanyName"
+        android:id="@+id/textViewtcnv_Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="DH Fast Global"
         android:textSize="30dp"
         android:textStyle="bold"
         android:textColor="#E83A3A"
-        android:layout_below="@id/imageViewCompanyLogo"
+        android:layout_below="@id/imageViewtcnv_Logo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"/>
 
     <!-- Danh sách các nút bấm -->
     <Button
-        android:id="@+id/btnManageEmployees"
+        android:id="@+id/btn_tcnv_ttnv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#E83A3A"
         android:backgroundTint="#2ACCCC"
         android:textStyle="bold"
-        android:text="Thông tin nhân viên"
-        android:layout_below="@id/textViewCompanyName"
+        android:text="THÔNG TIN NHÂN VIÊN"
+        android:layout_below="@id/textViewtcnv_Name"
         android:layout_marginTop="20dp"/>
 
     <Button
-        android:id="@+id/btnManageAttendance"
+        android:id="@+id/btn_tcnv_cc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#E83A3A"
         android:backgroundTint="#2ACCCC"
         android:textStyle="bold"
-        android:text="Chấm Công"
-        android:layout_below="@id/btnManageEmployees"
+        android:text="CHẤM CÔNG"
+        android:layout_below="@id/btn_tcnv_ttnv"
         android:layout_marginTop="8dp"/>
 
     <Button
-        android:id="@+id/btnManageSalary"
+        android:id="@+id/btn_tcnv_luong"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#E83A3A"
         android:backgroundTint="#2ACCCC"
         android:textStyle="bold"
-        android:text="Lương"
-        android:layout_below="@id/btnManageAttendance"
+        android:text="LƯƠNG"
+        android:layout_below="@id/btn_tcnv_cc"
         android:layout_marginTop="8dp"/>
 
     <Button
-        android:id="@+id/btnPersonalInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#E83A3A"
-        android:backgroundTint="#2ACCCC"
-        android:textStyle="bold"
-        android:text="Thông tin cá nhân"
-        android:layout_below="@id/btnManageSalary"
-        android:layout_marginTop="8dp"/>
-
-    <Button
-        android:id="@+id/btnLogout"
+        android:id="@+id/btn_tcnv_dx"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#F5CC00"
         android:backgroundTint="#689F38"
         android:textStyle="bold"
         android:text="Đăng xuất"
-        android:layout_below="@id/btnPersonalInfo"
+        android:layout_below="@id/btn_tcnv_luong"
         android:layout_marginTop="8dp"/>
 
 </RelativeLayout>

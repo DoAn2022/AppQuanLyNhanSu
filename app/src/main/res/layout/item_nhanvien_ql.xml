@@ -1,16 +1,51 @@
 <!-- res/layout/item_nhanvien_ql.xml -->
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:background="#3BBEBC"
+    android:padding="16dp">
 
-    <!-- Thêm các TextView để hiển thị thông tin nhân viên -->
     <TextView
-        android:id="@+id/textHoTen"
+        android:id="@+id/text_itemnvql_TenNhanVien"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Tên Nhân Viên"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
 
-    <!-- Thêm các TextView khác -->
+    <TextView
+        android:id="@+id/text_itemnvql_PhongBan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phòng Ban"
+        android:layout_below="@id/text_itemnvql_TenNhanVien"
+        android:layout_marginTop="4dp"
+        android:textColor="#666666"/>
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/text_itemnvql_PhongBan"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btn_itemnvql_Xem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem Chi Tiết"
+            android:textColor="#00796B"
+            android:backgroundTint="#FBC02D"/>
+
+        <Button
+            android:id="@+id/btn_itemnvql_Xoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa"
+            android:textColor="#303F9F"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#D32F2F"/>
+    </LinearLayout>
+
+</RelativeLayout>

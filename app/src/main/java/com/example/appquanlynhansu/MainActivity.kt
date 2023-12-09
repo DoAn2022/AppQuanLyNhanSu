@@ -33,9 +33,19 @@ class MainActivity : AppCompatActivity() {
             Log.d("MongoDB Connection", "Connection OK")
             showToast("MongoDB OK")
             // Thực hiện các thao tác với MongoDB ở đây
+//            val collection = mongoDatabase.getCollection("TaiKhoan")
+//            val firstDocument = collection.find().first()
+//            if (firstDocument != null) {
+//
+//                // Process the first document
+//                Toast.makeText(this,firstDocument.toJson(), Toast.LENGTH_LONG)
+//                Log.e("Infor",firstDocument.toJson())
+//            } else {
+//                Toast.makeText(this,"Không có dữ liệu", Toast.LENGTH_LONG)
+//            }
         } else {
             Log.e("MongoDB Connection", "Connection failed")
-            showToast("KOKOKOKO")
+            showToast("NO")
         }
     }
 
@@ -45,9 +55,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun connectToMongoDB(): Boolean {
         return try {
-            val uri = MongoClientURI("mongodb://ducnt:mtDD11mw40doOhZs@localhost:27017/QuanLyNhanSu")
+            Log.e("Infor","Connect database begin")
+            //val uri = MongoClientURI("mongodb://ducnt:mtDD11mw40doOhZs@localhost:27017/QuanLyNhanSu")
+            val uri = MongoClientURI("mongodb://ducnt:v6jRdlo8AwKMbcOM@cluster0.b19vchi.mongodb.net/?retryWrites=true&w=majority")
             val mongoClient = MongoClient(uri)
             mongoDatabase = mongoClient.getDatabase("QuanLyNhanSu")
+
             true
         } catch (e: Exception) {
             Log.e("MongoDB Connection", "Error: ${e.message}")
