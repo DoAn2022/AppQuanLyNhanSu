@@ -62,12 +62,15 @@
                     android:text="Tháng:"
                     android:textSize="18sp" />
 
-                <EditText
-                    android:id="@+id/edt_ctl_Thang"
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_ctl_ChonThang"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:inputType="text" />
+                    android:text="Chọn Tháng"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:backgroundTint="#FBC02D"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
