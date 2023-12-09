@@ -62,6 +62,17 @@
         android:layout_marginTop="8dp"/>
 
     <Button
+        android:id="@+id/btn_tcql_tnv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#E83A3A"
+        android:backgroundTint="#2ACCCC"
+        android:textStyle="bold"
+        android:text="THÊM NHÂN VIÊN"
+        android:layout_below="@id/btn_tcql_qll"
+        android:layout_marginTop="8dp"/>
+
+    <Button
         android:id="@+id/btn_tcql_dx"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,7 +80,7 @@
         android:backgroundTint="#689F38"
         android:textStyle="bold"
         android:text="Đăng xuất"
-        android:layout_below="@id/btn_tcql_qll"
+        android:layout_below="@id/btn_tcql_tnv"
         android:layout_marginTop="8dp"/>
 
 </RelativeLayout>

@@ -64,9 +64,9 @@
 
         <Button
             android:id="@+id/Btn_dangky"
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
+                android:layout_marginBottom="15dp"
             android:backgroundTint="#689F38"
             android:text="Đăng Ký"
             android:textSize="20dp"

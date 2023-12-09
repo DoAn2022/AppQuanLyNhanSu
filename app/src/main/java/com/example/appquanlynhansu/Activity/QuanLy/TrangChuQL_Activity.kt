@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.appquanlynhansu.Activity.DangKy_Activity
 import com.example.appquanlynhansu.MainActivity
 import com.example.appquanlynhansu.R
 
@@ -16,12 +17,14 @@ class TrangChuQL_Activity : AppCompatActivity() {
         val btn_tcql_qlnv: Button = findViewById(R.id.btn_tcql_qlnv)
         val btn_tcql_qlcc: Button = findViewById(R.id.btn_tcql_qlcc)
         val btn_tcql_qll: Button = findViewById(R.id.btn_tcql_qll)
+        val btn_tcql_tnv: Button = findViewById(R.id.btn_tcql_tnv)
         val btn_tcql_dx: Button = findViewById(R.id.btn_tcql_dx)
 
         // Đăng ký sự kiện click cho các nút
         btn_tcql_qlnv.setOnClickListener { R.id.btn_tcql_qlnv }
         btn_tcql_qlcc.setOnClickListener { R.id.btn_tcql_qlcc }
         btn_tcql_qll.setOnClickListener {R.id.btn_tcql_qll  }
+        btn_tcql_tnv.setOnClickListener {R.id.btn_tcql_tnv  }
         btn_tcql_dx.setOnClickListener { R.id.btn_tcql_dx }
 
 
@@ -37,6 +40,11 @@ class TrangChuQL_Activity : AppCompatActivity() {
         }
         btn_tcql_qll.setOnClickListener {
             val intent = Intent(this,QuanLyLuongQL_Activity::class.java)
+            intent.putExtra("key", "value")
+            startActivity(intent)
+        }
+        btn_tcql_tnv.setOnClickListener {
+            val intent = Intent(this,DangKy_Activity::class.java)
             intent.putExtra("key", "value")
             startActivity(intent)
         }

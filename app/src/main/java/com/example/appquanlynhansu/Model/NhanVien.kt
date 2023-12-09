@@ -1,5 +1,4 @@
 package com.example.appquanlynhansu.Model
-
 import java.util.Date
 
 data class NhanVien(

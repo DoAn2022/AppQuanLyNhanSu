@@ -1,0 +1,24 @@
+<!-- res/layout/item_chamcongnv.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Các TextView để hiển thị thông tin chấm công của nhân viên -->
+
+    <TextView
+        android:id="@+id/text_item_ccnv_Ngay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày: "
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/text_item_ccnv_TrangThai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trạng Thái: "
+        android:textSize="18sp"/>
+</LinearLayout>

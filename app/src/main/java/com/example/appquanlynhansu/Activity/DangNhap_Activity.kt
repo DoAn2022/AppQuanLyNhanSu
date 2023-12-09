@@ -22,7 +22,7 @@ class DangNhap_Activity : AppCompatActivity() {
         Btn_dangky.setOnClickListener{R.id.Btn_dangky}
 
         Btn_dangnhap.setOnClickListener {
-            val intent = Intent(this, TrangChuQL_Activity::class.java)
+            val intent = Intent(this, TrangChuNv_Activity::class.java)
             intent.putExtra("key", "value")
             startActivity(intent)
         }
