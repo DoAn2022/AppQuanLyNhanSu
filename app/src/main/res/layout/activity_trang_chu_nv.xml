@@ -6,7 +6,7 @@
     android:background="@drawable/background"
     tools:context=".Activity.NhanVien.TrangChuNv_Activity">
 
-    <!-- Header: Ảnh công ty và Tên công ty -->
+    <!-- Ảnh công ty và Tên công ty -->
     <ImageView
         android:id="@+id/imageViewtcnv_Logo"
         android:layout_width="150dp"
@@ -20,56 +20,83 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="DH Fast Global"
-        android:textSize="30dp"
+        android:textSize="40dp"
         android:textStyle="bold"
         android:textColor="#E83A3A"
         android:layout_below="@id/imageViewtcnv_Logo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="10dp"/>
 
     <!-- Danh sách các nút bấm -->
-    <Button
-        android:id="@+id/btn_tcnv_ttnv"
+    <GridLayout
+        android:id="@+id/gridLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#E83A3A"
-        android:backgroundTint="#2ACCCC"
-        android:textStyle="bold"
-        android:text="THÔNG TIN NHÂN VIÊN"
         android:layout_below="@id/textViewtcnv_Name"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="10dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:background="@drawable/b3">
 
-    <Button
-        android:id="@+id/btn_tcnv_cc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#E83A3A"
-        android:backgroundTint="#2ACCCC"
-        android:textStyle="bold"
-        android:text="CHẤM CÔNG"
-        android:layout_below="@id/btn_tcnv_ttnv"
-        android:layout_marginTop="8dp"/>
+        <Button
+            android:id="@+id/btn_tcnv_ttnv"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textColor="#1E88E5"
+            android:backgroundTint="#FBC02D"
+            android:textStyle="bold"
+            android:text="THÔNG TIN NHÂN VIÊN"
+            android:drawableLeft="@drawable/icon_profile"
+            android:drawablePadding="10dp"/>
 
-    <Button
-        android:id="@+id/btn_tcnv_luong"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#E83A3A"
-        android:backgroundTint="#2ACCCC"
-        android:textStyle="bold"
-        android:text="LƯƠNG"
-        android:layout_below="@id/btn_tcnv_cc"
-        android:layout_marginTop="8dp"/>
+        <Button
+            android:id="@+id/btn_tcnv_cc"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textColor="#FDD835"
+            android:backgroundTint="#512DA8"
+            android:textStyle="bold"
+            android:text="CHẤM CÔNG"
+            android:drawableLeft="@drawable/icon_calender"
+            android:drawablePadding="10dp"/>
 
+        <Button
+            android:id="@+id/btn_tcnv_luong"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textColor="#3AE8D9"
+            android:backgroundTint="#388E3C"
+            android:textStyle="bold"
+            android:text="LƯƠNG"
+            android:drawableLeft="@drawable/icon_luong"
+            android:drawablePadding="10dp"/>
+
+    </GridLayout>
+
+    <!-- Nút Đăng xuất -->
     <Button
         android:id="@+id/btn_tcnv_dx"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#F5CC00"
-        android:backgroundTint="#689F38"
-        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#D32F2F"
         android:text="Đăng xuất"
-        android:layout_below="@id/btn_tcnv_luong"
-        android:layout_marginTop="8dp"/>
+        android:textSize="25dp"
+        android:textColor="#F5CC00"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/icon_logout"
+        android:drawablePadding="8dp"/>
 
 </RelativeLayout>

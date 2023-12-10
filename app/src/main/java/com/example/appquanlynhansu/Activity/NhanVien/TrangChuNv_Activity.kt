@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.appquanlynhansu.MainActivity
 import com.example.appquanlynhansu.R
 
 class TrangChuNv_Activity : AppCompatActivity(), View.OnClickListener {
@@ -41,8 +42,7 @@ class TrangChuNv_Activity : AppCompatActivity(), View.OnClickListener {
                 startActivity(Intent(this, LuongNV_Activity::class.java))
             }
             R.id.btn_tcnv_dx -> {
-                // Đăng xuất và chuyển về màn hình đăng nhập hoặc màn hình khác tùy theo logic của ứng dụng
-                // Trong ví dụ này, chúng ta chỉ đơn giản kết thúc Activity
+                startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
         }
