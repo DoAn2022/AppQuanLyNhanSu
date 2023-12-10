@@ -14,7 +14,9 @@
         android:textColor="#D32F2F"
         android:textSize="25dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/icon_luong"
+        android:drawablePadding="10dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewluongql"

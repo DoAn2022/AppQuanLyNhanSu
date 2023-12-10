@@ -23,8 +23,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tên Nhân Viên:"
-                    android:textSize="18sp" />
+                    android:text="Tên NV:"
+                    android:textSize="18sp"
+                    android:drawableLeft="@drawable/icon_luong"
+                    android:drawablePadding="10dp"
+                    android:textStyle="bold"/>
 
                 <EditText
                     android:id="@+id/edt_ctl_TenNhanVien"
@@ -42,7 +45,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Phòng Ban:"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
                 <EditText
                     android:id="@+id/edt_ctl_PhongBan"
@@ -60,7 +64,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tháng:"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_ctl_ChonThang"
@@ -81,7 +86,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Lương Cơ Bản:"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
                 <EditText
                     android:id="@+id/edt_ctl_LuongCoBan"
@@ -98,7 +104,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Thuong"
+                    android:text="Thưởng"
+                    android:textStyle="bold"
                     android:textSize="18sp" />
 
                 <EditText
@@ -117,7 +124,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tổng Lương:"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
                 <EditText
                     android:id="@+id/edt_ctl_TongLuong"

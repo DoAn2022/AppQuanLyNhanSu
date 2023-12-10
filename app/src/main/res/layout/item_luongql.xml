@@ -12,7 +12,9 @@
         android:layout_height="wrap_content"
         android:text="Tên Nhân Viên"
         android:textSize="18sp"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+        android:drawableLeft="@drawable/icon_luong"
+        android:drawablePadding="10dp"/>
 
     <TextView
         android:id="@+id/text_itemluongql_PhongBan"

@@ -43,7 +43,7 @@
             android:textSize="20dp" />
 
         <TextView
-            android:id="@+id/quenmatkhau"
+            android:id="@+id/hienmatkhau"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
@@ -54,13 +54,16 @@
 
         <Button
             android:id="@+id/Btn_dangnhap"
-            android:layout_width="150dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:backgroundTint="#689F38"
+            android:backgroundTint="#43A047"
             android:text="Đăng Nhập"
+            android:textColor="#F6F2F1"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:drawableRight="@drawable/icon_new"
+            android:drawablePadding="10dp"/>
 
     </LinearLayout>
 </RelativeLayout>

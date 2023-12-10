@@ -23,9 +23,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tên Nhân Viên:"
+                    android:text="Tên NV:"
                     android:textStyle="bold"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:drawableLeft="@drawable/icon_profile"
+                    android:drawablePadding="10dp"/>
 
                 <EditText
                     android:id="@+id/edt_ctnv_TenNhanVien"

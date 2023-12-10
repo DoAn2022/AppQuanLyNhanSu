@@ -32,7 +32,8 @@
             android:layout_marginBottom="10dp"
             android:ems="18"
             android:hint="Tên Đăng Ký"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            />
 
         <EditText
             android:id="@+id/matkhau"
@@ -56,14 +57,16 @@
 
         <Button
             android:id="@+id/Btn_dangky"
-            android:layout_width="150dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="30dp"
             android:backgroundTint="#388E3C"
             android:text="Đăng Ký"
             android:textSize="25dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:drawableRight="@drawable/icon_new"
+            android:drawablePadding="10dp"/>
 
     </LinearLayout>
 </RelativeLayout>

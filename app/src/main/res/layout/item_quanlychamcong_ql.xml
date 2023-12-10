@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:text="Ngày:"
         android:textSize="18sp"
-        android:layout_gravity="center_vertical"/>
+        android:layout_gravity="center_vertical"
+        />
 
     <EditText
         android:id="@+id/edt_item_qlccql_Ngay"

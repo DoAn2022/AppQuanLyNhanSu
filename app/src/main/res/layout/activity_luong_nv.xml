@@ -24,7 +24,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tên Nhân Viên:"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
                 <EditText
                     android:id="@+id/edt_lnv_TenNhanVien"
@@ -42,7 +43,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Phòng Ban:"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
                 <EditText
                     android:id="@+id/edt_lnv_PhongBan"
@@ -60,7 +62,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tháng:"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_lnv_ChonThang"
@@ -70,7 +73,8 @@
                     android:text="Chọn Tháng"
                     android:textSize="18sp"
                     android:textColor="#000000"
-                    android:backgroundTint="#FBC02D"/>
+                    android:backgroundTint="#FBC02D"
+                    android:textStyle="bold"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -81,7 +85,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Lương Cơ Bản:"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
                 <EditText
                     android:id="@+id/edt_lnv_LuongCoBan"
@@ -99,7 +104,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Thuong"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
                 <EditText
                     android:id="@+id/edt_lnv_Thuong"
@@ -117,7 +123,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Tổng Lương:"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
                 <EditText
                     android:id="@+id/edt_lnv_TongLuong"

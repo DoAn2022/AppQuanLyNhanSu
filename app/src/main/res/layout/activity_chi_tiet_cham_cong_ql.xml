@@ -23,8 +23,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tên Nhân Viên:"
-                    android:textSize="18sp" />
+                    android:text="Tên NV:"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/icon_calender"
+                    android:drawablePadding="10dp"/>
 
                 <EditText
                     android:id="@+id/edt_ctcc_TenNhanVien"
@@ -42,7 +45,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Phòng Ban:"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
 
                 <EditText
                     android:id="@+id/edt_ctcc_PhongBan"

@@ -7,14 +7,6 @@
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/text_itemccql_TenNhanVien"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tên Nhân Viên"
-        android:textSize="18sp"
-        android:textColor="#000000"/>
-
-    <TextView
         android:id="@+id/text_itemccql_PhongBan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,11 +20,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_itemccql_PhongBan"
-        android:layout_marginStart="111dp"
-        android:layout_marginTop="-46dp"
-        android:layout_toEndOf="@id/text_itemccql_TenNhanVien"
+        android:layout_marginStart="-61dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@id/text_itemccql_PhongBan"
         android:backgroundTint="#31E112"
         android:text="Xem Chi Tiết"
         android:textColor="#E83A3A" />
+
+    <TextView
+        android:id="@+id/text_itemccql_TenNhanVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_calender"
+        android:drawablePadding="10dp"
+        android:text="Tên Nhân Viên"
+        android:textColor="#000000"
+        android:textSize="18sp" />
 
 </RelativeLayout>
