@@ -35,10 +35,10 @@
         <Button
             android:id="@+id/btn_itemnvql_Xem"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="84dp"
+            android:backgroundTint="#FBC02D"
             android:text="Xem Chi Tiết"
-            android:textColor="#00796B"
-            android:backgroundTint="#FBC02D"/>
+            android:textColor="#00796B" />
 
         <Button
             android:id="@+id/btn_itemnvql_Xoa"
@@ -47,7 +47,9 @@
             android:text="Xóa"
             android:textColor="#303F9F"
             android:layout_marginStart="16dp"
-            android:backgroundTint="#D32F2F"/>
+            android:backgroundTint="#D32F2F"
+            android:drawableLeft="@drawable/icon_delete"
+            android:drawablePadding="10dp"/>
     </LinearLayout>
 
 </RelativeLayout>

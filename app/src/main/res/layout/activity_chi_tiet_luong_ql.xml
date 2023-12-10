@@ -150,18 +150,22 @@
                     android:layout_weight="1"
                     android:text="Sửa"
                     android:textStyle="bold"
-                    android:textSize="20dp"/>
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/icon_edit"
+                    android:drawablePadding="10dp"/>
 
                 <Button
                     android:id="@+id/btnLuu"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="#E83A3A"
                     android:backgroundTint="#2ACCCC"
                     android:text="Lưu"
+                    android:textColor="#E83A3A"
+                    android:textSize="20dp"
                     android:textStyle="bold"
-                    android:textSize="20dp"/>
+                    android:drawableLeft="@drawable/icon_checked"
+                    android:drawablePadding="10dp"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

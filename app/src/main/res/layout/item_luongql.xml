@@ -38,7 +38,9 @@
             android:layout_height="wrap_content"
             android:text="Xem Chi Tiết"
             android:textColor="#00796B"
-            android:backgroundTint="#FBC02D"/>
+            android:backgroundTint="#FBC02D"
+            android:drawableLeft="@drawable/icon_checked"
+            android:drawablePadding="10dp"/>
     </LinearLayout>
 
 </RelativeLayout>

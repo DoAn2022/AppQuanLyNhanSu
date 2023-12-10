@@ -186,7 +186,9 @@
                     android:backgroundTint="#40F30F"
                     android:text="Sửa"
                     android:textStyle="bold"
-                    android:textSize="20dp"/>
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/icon_edit"
+                    android:drawablePadding="10dp"/>
 
                 <Button
                     android:id="@+id/btnLuu"
@@ -197,7 +199,9 @@
                     android:backgroundTint="#2ACCCC"
                     android:text="Lưu"
                     android:textStyle="bold"
-                    android:textSize="20dp"/>
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/icon_checked"
+                    android:drawablePadding="10dp"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

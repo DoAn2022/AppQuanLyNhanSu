@@ -25,7 +25,9 @@
         android:layout_toEndOf="@id/text_itemccql_PhongBan"
         android:backgroundTint="#31E112"
         android:text="Xem Chi Tiết"
-        android:textColor="#E83A3A" />
+        android:textColor="#E83A3A"
+        android:drawableLeft="@drawable/icon_checked"
+        android:drawablePadding="10dp"/>
 
     <TextView
         android:id="@+id/text_itemccql_TenNhanVien"
