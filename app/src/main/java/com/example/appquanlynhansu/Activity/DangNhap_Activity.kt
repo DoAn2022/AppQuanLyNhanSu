@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.example.appquanlynhansu.Activity.NhanVien.TrangChuNv_Activity
 import com.example.appquanlynhansu.Activity.QuanLy.TrangChuQL_Activity
 import com.example.appquanlynhansu.R
 
@@ -22,7 +21,7 @@ class DangNhap_Activity : AppCompatActivity() {
 
 
         Btn_dangnhap.setOnClickListener {
-            val intent = Intent(this, TrangChuNv_Activity::class.java)
+            val intent = Intent(this, TrangChuQL_Activity::class.java)
             intent.putExtra("key", "value")
             startActivity(intent)
         }

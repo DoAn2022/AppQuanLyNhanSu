@@ -42,7 +42,7 @@
             android:name=".Activity.QuanLy.QuanLyNhanVienQL_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activity.NhanVien.TrangChuNv_Activity"
+            android:name=".Activity.NhanVien.TrangChuNV_Activity"
             android:exported="false" />
         <activity
             android:name=".Activity.QuanLy.TrangChuQL_Activity"

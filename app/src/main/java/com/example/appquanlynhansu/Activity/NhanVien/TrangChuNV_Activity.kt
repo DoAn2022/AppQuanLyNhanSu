@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.appquanlynhansu.MainActivity
 import com.example.appquanlynhansu.R
 
-class TrangChuNv_Activity : AppCompatActivity(), View.OnClickListener {
+class TrangChuNV_Activity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
