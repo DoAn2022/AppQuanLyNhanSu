@@ -50,7 +50,8 @@
             android:backgroundTint="#FBC02D"
             android:textStyle="bold"
             android:text="THÔNG TIN NHÂN VIÊN"
-           c/>
+            android:drawableLeft="@drawable/icon_profile"
+            android:drawablePadding="10dp"/>
 
         <Button
             android:id="@+id/btn_tcnv_cc"
