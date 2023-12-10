@@ -35,8 +35,8 @@ class ChamCongNV_Activity : AppCompatActivity() {
         recyclerViewChamCong = findViewById(R.id.recyclerView_ccnv_nv)
 
         // Lấy dữ liệu từ Intent (thay thế bằng dữ liệu thực tế)
-        val tenNhanVien = "Tên Nhân Viên Mẫu"
-        textTenNhanVien.text = "Tên Nhân Viên: $tenNhanVien"
+        val tenNhanVien = "NT ĐỨC"
+        textTenNhanVien.text = ": $tenNhanVien"
 
         // Thay thế bằng hàm lấy danh sách chấm công thực tế
         val chamCongList = getSampleChamCongList()
